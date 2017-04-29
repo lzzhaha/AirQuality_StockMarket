@@ -93,3 +93,43 @@ populate_city(gz_data,gz_history,city_name='Guangzhou')
 
 
 #writing data to bj.csv, sh.csv, gz.csv files
+fields = ['City','Date','AQI','AQI_range','Quality_level','PM25','PM10','SO2','Rank']
+
+with open('bj.csv','w',encoding='utf-8-sig') as bj_csv:
+    bj_writer = csv.DictWriter(bj_csv,fieldnames = fields)
+    bj_writer.writeheader()
+    for record in bj_history:
+        bj_writer.writerow({fields[0]:record._Name, fields[1]:record._Date,\
+                            fields[2]:record._AQI, fields[3]:record._AQI_range,\
+                            fields[4]:record._Quality_level, fields[5]:record._PM25,\
+                            fields[6]:record._PM10, fields[7]: record._SO2,\
+                            fields[8]:record._Rank,
+                            })
+
+bj_csv.close()
+
+with open('sh.csv','w',encoding='utf-8-sig') as sh_csv:
+    sh_writer = csv.DictWriter(sh_csv,fieldnames = fields)
+    sh_writer.writeheader()
+    for record in sh_history:
+        sh_writer.writerow({fields[0]:record._Name, fields[1]:record._Date,\
+                            fields[2]:record._AQI, fields[3]:record._AQI_range,\
+                            fields[4]:record._Quality_level, fields[5]:record._PM25,\
+                            fields[6]:record._PM10, fields[7]: record._SO2,\
+                            fields[8]:record._Rank,
+                            })
+
+sh_csv.close()
+
+with open('gz.csv','w',encoding='utf-8-sig') as gz_csv:
+    gz_writer = csv.DictWriter(gz_csv,fieldnames = fields)
+    gz_writer.writeheader()
+    for record in gz_history:
+        gz_writer.writerow({fields[0]:record._Name, fields[1]:record._Date,\
+                            fields[2]:record._AQI, fields[3]:record._AQI_range,\
+                            fields[4]:record._Quality_level, fields[5]:record._PM25,\
+                            fields[6]:record._PM10, fields[7]: record._SO2,\
+                            fields[8]:record._Rank,
+                            })
+
+gz_csv.close()
