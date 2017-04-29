@@ -94,7 +94,7 @@ populate_city(gz_data,gz_history,city_name='Guangzhou')
 
 #writing data to bj.csv, sh.csv, gz.csv files
 fields = ['City','Date','AQI','AQI_range','Quality_level','PM25','PM10','SO2','Rank']
-
+'''
 with open('bj.csv','w',encoding='utf-8-sig') as bj_csv:
     bj_writer = csv.DictWriter(bj_csv,fieldnames = fields)
     bj_writer.writeheader()
@@ -133,3 +133,15 @@ with open('gz.csv','w',encoding='utf-8-sig') as gz_csv:
                             })
 
 gz_csv.close()
+
+'''
+#Perform some statistics analysis using panda, numpy, matplotlib library
+import panda as pa
+import numpy as np
+import matplotlib as mp
+
+bj_df = pa.DataFrame({'A' : 1.,'B' : pa.Timestamp('20130102')})
+
+bj_df 
+
+bj_df.describe()
