@@ -6,6 +6,10 @@ from bs4 import BeautifulSoup
 import json
 from datetime import date
 import csv
+#import panda as pa
+import numpy as np
+import matplotlib.mlab as mlab
+import matplotlib.pyplot as plt
 
 #get the web page and parse it to beautifulsoup object
 
@@ -43,25 +47,25 @@ del gz_data[0:2]
 #define a class City to hold the data
 
 class City_history:
-    _Name=''
-    _Date = date(2014,1,1)
-    _AQI = 0
-    _AQI_range = dict({'min':0, 'max':0})
-    _Quality_level = '' 
-    _PM25 = 0.0
-    _PM10 = 0.0
-    _SO2 = 0.0
-    _Rank = 0
+    Name=''
+    Date = date(2014,1,1)
+    AQI = 0
+    AQI_range = dict({'min':0, 'max':0})
+    Quality_level = '' 
+    PM25 = 0.0
+    PM10 = 0.0
+    SO2 = 0.0
+    Rank = 0
     def __init__(self,Name,Date,AQI,AQI_range,Quality_level,PM25,PM10,SO2,Rank):
-        self._Name=Name
-        self._Date =Date
-        self._AQI=AQI
-        self._AQI_range=AQI_range
-        self._Quality_level=Quality_level
-        self._PM25=PM25
-        self._PM10=PM10
-        self._SO2=SO2
-        self._Rank=Rank
+        self.Name=Name
+        self.Date =Date
+        self.AQI=AQI
+        self.AQI_range=AQI_range
+        self.Quality_level=Quality_level
+        self.PM25=PM25
+        self.PM10=PM10
+        self.SO2=SO2
+        self.Rank=Rank
 
 bj_history=[]
 sh_history=[]
@@ -94,16 +98,16 @@ populate_city(gz_data,gz_history,city_name='Guangzhou')
 
 #writing data to bj.csv, sh.csv, gz.csv files
 fields = ['City','Date','AQI','AQI_range','Quality_level','PM25','PM10','SO2','Rank']
-'''
+
 with open('bj.csv','w',encoding='utf-8-sig') as bj_csv:
     bj_writer = csv.DictWriter(bj_csv,fieldnames = fields)
     bj_writer.writeheader()
     for record in bj_history:
-        bj_writer.writerow({fields[0]:record._Name, fields[1]:record._Date,\
-                            fields[2]:record._AQI, fields[3]:record._AQI_range,\
-                            fields[4]:record._Quality_level, fields[5]:record._PM25,\
-                            fields[6]:record._PM10, fields[7]: record._SO2,\
-                            fields[8]:record._Rank,
+        bj_writer.writerow({fields[0]:record.Name, fields[1]:record.Date,\
+                            fields[2]:record.AQI, fields[3]:record.AQI_range,\
+                            fields[4]:record.Quality_level, fields[5]:record.PM25,\
+                            fields[6]:record.PM10, fields[7]: record.SO2,\
+                            fields[8]:record.Rank,
                             })
 
 bj_csv.close()
@@ -112,11 +116,11 @@ with open('sh.csv','w',encoding='utf-8-sig') as sh_csv:
     sh_writer = csv.DictWriter(sh_csv,fieldnames = fields)
     sh_writer.writeheader()
     for record in sh_history:
-        sh_writer.writerow({fields[0]:record._Name, fields[1]:record._Date,\
-                            fields[2]:record._AQI, fields[3]:record._AQI_range,\
-                            fields[4]:record._Quality_level, fields[5]:record._PM25,\
-                            fields[6]:record._PM10, fields[7]: record._SO2,\
-                            fields[8]:record._Rank,
+         sh_writer.writerow({fields[0]:record.Name, fields[1]:record.Date,\
+                            fields[2]:record.AQI, fields[3]:record.AQI_range,\
+                            fields[4]:record.Quality_level, fields[5]:record.PM25,\
+                            fields[6]:record.PM10, fields[7]: record.SO2,\
+                            fields[8]:record.Rank,
                             })
 
 sh_csv.close()
@@ -125,23 +129,35 @@ with open('gz.csv','w',encoding='utf-8-sig') as gz_csv:
     gz_writer = csv.DictWriter(gz_csv,fieldnames = fields)
     gz_writer.writeheader()
     for record in gz_history:
-        gz_writer.writerow({fields[0]:record._Name, fields[1]:record._Date,\
-                            fields[2]:record._AQI, fields[3]:record._AQI_range,\
-                            fields[4]:record._Quality_level, fields[5]:record._PM25,\
-                            fields[6]:record._PM10, fields[7]: record._SO2,\
-                            fields[8]:record._Rank,
+        gz_writer.writerow({fields[0]:record.Name, fields[1]:record.Date,\
+                            fields[2]:record.AQI, fields[3]:record.AQI_range,\
+                            fields[4]:record.Quality_level, fields[5]:record.PM25,\
+                            fields[6]:record.PM10, fields[7]: record.SO2,\
+                            fields[8]:record.Rank,
                             })
-
 gz_csv.close()
 
-'''
+
 #Perform some statistics analysis using panda, numpy, matplotlib library
-import panda as pa
-import numpy as np
-import matplotlib as mp
 
-bj_df = pa.DataFrame({'A' : 1.,'B' : pa.Timestamp('20130102')})
+bj_df = pa.DataFrame(data = bj_history, columns = fields)
 
-bj_df 
+sh_df = pa.DataFrame(data = sh_history, columns = fields)
+
+gz_df = pa.DataFrame(data = gz_hisotry, columns = fileds)
 
 bj_df.describe()
+sh_df.describe()
+gz_df.describe()
+
+bj_air_histories = []
+for history in bj_history:
+    bj_air_histories.append(history.Quality_level)
+
+# get the frequencies of the air level for each cities
+
+air_levels = ['优','良','轻度污染','重度污染','中度污染','严重污染']
+
+plt.hist(bj_air_histories,bins = air_levels)
+
+plot.show()
