@@ -1,0 +1,23 @@
+﻿Beijing
+
+Level Frequency
+轻度污染   25
+良       9
+中度污染    4
+
+
+Shanghai
+
+Level Frequency
+轻度污染    3
+良      36
+
+
+Guangzhou
+
+Level Frequency
+轻度污染    0
+良      37
+优       1
+
+

@@ -139,7 +139,7 @@ gz_csv.close()
 
 
 #Perform some statistics analysis using panda, numpy, matplotlib library
-
+"""
 bj_df = pa.DataFrame(data = bj_history, columns = fields)
 
 sh_df = pa.DataFrame(data = sh_history, columns = fields)
@@ -149,15 +149,46 @@ gz_df = pa.DataFrame(data = gz_hisotry, columns = fileds)
 bj_df.describe()
 sh_df.describe()
 gz_df.describe()
-
+"""
 bj_air_histories = []
 for history in bj_history:
     bj_air_histories.append(history.Quality_level)
 
-# get the frequencies of the air level for each cities
+sh_air_histories = []
+for history in sh_history:
+    sh_air_histories.append(history.Quality_level)
 
-air_levels = ['优','良','轻度污染','重度污染','中度污染','严重污染']
+gz_air_histories = []
+for history in gz_history:
+    gz_air_histories.append(history.Quality_level)
 
-plt.hist(bj_air_histories,bins = air_levels)
+# populate the quality count dict
+def init_count_dict(city_air_history):
+    quality_count = dict()
+    for level in city_air_history:
+        if level in quality_count:
+            quality_count[level]+=1
+        else:
+            quality_count[level]=0    
 
-plot.show()
+    return quality_count
+
+bj_air_quality_count = init_count_dict(bj_air_histories)
+sh_air_quality_count = init_count_dict(sh_air_histories)
+gz_air_quality_count = init_count_dict(gz_air_histories)
+
+
+# write frequencies of the air level for each cities to txt file
+file = open('Air_quality_count.txt','a',encoding ='utf-8-sig')
+def write_count(city,file, count_dict):
+    name_dict = {'bj':'Beijing','sh':'Shanghai','gz':'Guangzhou'}
+    file.write(name_dict[city]+'\n\n')
+    file.write('Level Frequency\n')
+    for key, value in count_dict.items():
+        file.write('{:6} {:2}'.format(key,value) +'\n' )
+    file.write('\n\n')
+write_count('bj',file,bj_air_quality_count)
+write_count('sh',file,sh_air_quality_count)
+write_count('gz',file,gz_air_quality_count)
+
+file.close()
