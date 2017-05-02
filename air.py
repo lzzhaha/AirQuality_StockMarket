@@ -10,6 +10,7 @@ import csv
 import numpy as np
 import matplotlib.mlab as mlab
 import matplotlib.pyplot as plt
+import os
 
 #get the web page and parse it to beautifulsoup object
 
@@ -192,3 +193,30 @@ write_count('sh',file,sh_air_quality_count)
 write_count('gz',file,gz_air_quality_count)
 
 file.close()
+
+#Plot the AQI histogram for each city
+bj_AQI = []
+for history in bj_history:
+    bj_AQI.append(int(history.AQI))
+sh_AQI = []
+for history in sh_history:
+    sh_AQI.append(int(history.AQI))
+gz_AQI = []
+for history in gz_history:
+    gz_AQI.append(int(history.AQI))
+
+def plot_histogram(city, AQI_list):
+    bins = np.linspace(0,200,num = 100)
+    plt.hist(AQI_list,bins)
+    name_dict = {'bj':'Beijing','sh':'Shanghai','gz':'Guangzhou'}
+    plt.title('AQI of '+name_dict[city]+ ' from 2014 - 2017')
+    plt.xlabel('AQI Range')
+    plt.ylabel('Frequnecy')
+    #plt.figure().savefig('C:\\Users\\HAHA\\Desktop\\AirQuality_StockMarket\\'+name_dict[city]+'_AQI.png',format ='png',)
+    plt.show()
+    
+plot_histogram('bj',bj_AQI)
+plot_histogram('sh',sh_AQI)
+plot_histogram('gz',gz_AQI)
+
+    

@@ -21,3 +21,739 @@ Level Frequency
 优       1
 
 
+Beijing
+
+Level Frequency
+良       9
+轻度污染   25
+中度污染    4
+
+
+Shanghai
+
+Level Frequency
+良      36
+轻度污染    3
+
+
+Guangzhou
+
+Level Frequency
+良      37
+轻度污染    0
+优       1
+
+
+Beijing
+
+Level Frequency
+良       9
+轻度污染   25
+中度污染    4
+
+
+Shanghai
+
+Level Frequency
+轻度污染    3
+良      36
+
+
+Guangzhou
+
+Level Frequency
+优       1
+轻度污染    0
+良      37
+
+
+Beijing
+
+Level Frequency
+中度污染    4
+轻度污染   25
+良       9
+
+
+Shanghai
+
+Level Frequency
+轻度污染    3
+良      36
+
+
+Guangzhou
+
+Level Frequency
+优       1
+轻度污染    0
+良      37
+
+
+Beijing
+
+Level Frequency
+轻度污染   25
+中度污染    4
+良       9
+
+
+Shanghai
+
+Level Frequency
+轻度污染    3
+良      36
+
+
+Guangzhou
+
+Level Frequency
+轻度污染    0
+优       1
+良      37
+
+
+Beijing
+
+Level Frequency
+中度污染    4
+轻度污染   25
+良       9
+
+
+Shanghai
+
+Level Frequency
+良      36
+轻度污染    3
+
+
+Guangzhou
+
+Level Frequency
+优       1
+良      37
+轻度污染    0
+
+
+Beijing
+
+Level Frequency
+良       9
+中度污染    4
+轻度污染   25
+
+
+Shanghai
+
+Level Frequency
+良      36
+轻度污染    3
+
+
+Guangzhou
+
+Level Frequency
+良      37
+优       1
+轻度污染    0
+
+
+Beijing
+
+Level Frequency
+中度污染    4
+良       9
+轻度污染   25
+
+
+Shanghai
+
+Level Frequency
+良      36
+轻度污染    3
+
+
+Guangzhou
+
+Level Frequency
+优       1
+良      37
+轻度污染    0
+
+
+Beijing
+
+Level Frequency
+中度污染    4
+轻度污染   25
+良       9
+
+
+Shanghai
+
+Level Frequency
+轻度污染    3
+良      36
+
+
+Guangzhou
+
+Level Frequency
+轻度污染    0
+良      37
+优       1
+
+
+Beijing
+
+Level Frequency
+良       9
+轻度污染   25
+中度污染    4
+
+
+Shanghai
+
+Level Frequency
+良      36
+轻度污染    3
+
+
+Guangzhou
+
+Level Frequency
+良      37
+轻度污染    0
+优       1
+
+
+Beijing
+
+Level Frequency
+中度污染    4
+轻度污染   25
+良       9
+
+
+Shanghai
+
+Level Frequency
+轻度污染    3
+良      36
+
+
+Guangzhou
+
+Level Frequency
+优       1
+轻度污染    0
+良      37
+
+
+Beijing
+
+Level Frequency
+良       9
+轻度污染   25
+中度污染    4
+
+
+Shanghai
+
+Level Frequency
+良      36
+轻度污染    3
+
+
+Guangzhou
+
+Level Frequency
+优       1
+良      37
+轻度污染    0
+
+
+Beijing
+
+Level Frequency
+良       9
+中度污染    4
+轻度污染   25
+
+
+Shanghai
+
+Level Frequency
+良      36
+轻度污染    3
+
+
+Guangzhou
+
+Level Frequency
+良      37
+优       1
+轻度污染    0
+
+
+Beijing
+
+Level Frequency
+轻度污染   25
+良       9
+中度污染    4
+
+
+Shanghai
+
+Level Frequency
+轻度污染    3
+良      36
+
+
+Guangzhou
+
+Level Frequency
+轻度污染    0
+优       1
+良      37
+
+
+Beijing
+
+Level Frequency
+良       9
+中度污染    4
+轻度污染   25
+
+
+Shanghai
+
+Level Frequency
+良      36
+轻度污染    3
+
+
+Guangzhou
+
+Level Frequency
+良      37
+轻度污染    0
+优       1
+
+
+Beijing
+
+Level Frequency
+中度污染    4
+良       9
+轻度污染   25
+
+
+Shanghai
+
+Level Frequency
+良      36
+轻度污染    3
+
+
+Guangzhou
+
+Level Frequency
+良      37
+轻度污染    0
+优       1
+
+
+Beijing
+
+Level Frequency
+良       9
+中度污染    4
+轻度污染   25
+
+
+Shanghai
+
+Level Frequency
+良      36
+轻度污染    3
+
+
+Guangzhou
+
+Level Frequency
+优       1
+良      37
+轻度污染    0
+
+
+Beijing
+
+Level Frequency
+中度污染    4
+轻度污染   25
+良       9
+
+
+Shanghai
+
+Level Frequency
+轻度污染    3
+良      36
+
+
+Guangzhou
+
+Level Frequency
+优       1
+轻度污染    0
+良      37
+
+
+Beijing
+
+Level Frequency
+良       9
+中度污染    4
+轻度污染   25
+
+
+Shanghai
+
+Level Frequency
+良      36
+轻度污染    3
+
+
+Guangzhou
+
+Level Frequency
+良      37
+优       1
+轻度污染    0
+
+
+Beijing
+
+Level Frequency
+轻度污染   25
+中度污染    4
+良       9
+
+
+Shanghai
+
+Level Frequency
+轻度污染    3
+良      36
+
+
+Guangzhou
+
+Level Frequency
+轻度污染    0
+优       1
+良      37
+
+
+Beijing
+
+Level Frequency
+中度污染    4
+轻度污染   25
+良       9
+
+
+Shanghai
+
+Level Frequency
+良      36
+轻度污染    3
+
+
+Guangzhou
+
+Level Frequency
+优       1
+良      37
+轻度污染    0
+
+
+Beijing
+
+Level Frequency
+良       9
+轻度污染   25
+中度污染    4
+
+
+Shanghai
+
+Level Frequency
+良      36
+轻度污染    3
+
+
+Guangzhou
+
+Level Frequency
+良      37
+轻度污染    0
+优       1
+
+
+Beijing
+
+Level Frequency
+轻度污染   25
+中度污染    4
+良       9
+
+
+Shanghai
+
+Level Frequency
+轻度污染    3
+良      36
+
+
+Guangzhou
+
+Level Frequency
+轻度污染    0
+优       1
+良      37
+
+
+Beijing
+
+Level Frequency
+良       9
+中度污染    4
+轻度污染   25
+
+
+Shanghai
+
+Level Frequency
+良      36
+轻度污染    3
+
+
+Guangzhou
+
+Level Frequency
+优       1
+良      37
+轻度污染    0
+
+
+Beijing
+
+Level Frequency
+轻度污染   25
+良       9
+中度污染    4
+
+
+Shanghai
+
+Level Frequency
+轻度污染    3
+良      36
+
+
+Guangzhou
+
+Level Frequency
+轻度污染    0
+良      37
+优       1
+
+
+Beijing
+
+Level Frequency
+中度污染    4
+良       9
+轻度污染   25
+
+
+Shanghai
+
+Level Frequency
+良      36
+轻度污染    3
+
+
+Guangzhou
+
+Level Frequency
+优       1
+良      37
+轻度污染    0
+
+
+Beijing
+
+Level Frequency
+中度污染    4
+轻度污染   25
+良       9
+
+
+Shanghai
+
+Level Frequency
+轻度污染    3
+良      36
+
+
+Guangzhou
+
+Level Frequency
+优       1
+轻度污染    0
+良      37
+
+
+Beijing
+
+Level Frequency
+良       9
+轻度污染   25
+中度污染    4
+
+
+Shanghai
+
+Level Frequency
+良      36
+轻度污染    3
+
+
+Guangzhou
+
+Level Frequency
+良      37
+轻度污染    0
+优       1
+
+
+Beijing
+
+Level Frequency
+中度污染    4
+轻度污染   25
+良       9
+
+
+Shanghai
+
+Level Frequency
+轻度污染    3
+良      36
+
+
+Guangzhou
+
+Level Frequency
+优       1
+轻度污染    0
+良      37
+
+
+Beijing
+
+Level Frequency
+良       9
+轻度污染   25
+中度污染    4
+
+
+Shanghai
+
+Level Frequency
+良      36
+轻度污染    3
+
+
+Guangzhou
+
+Level Frequency
+良      37
+轻度污染    0
+优       1
+
+
+Beijing
+
+Level Frequency
+轻度污染   25
+良       9
+中度污染    4
+
+
+Shanghai
+
+Level Frequency
+轻度污染    3
+良      36
+
+
+Guangzhou
+
+Level Frequency
+优       1
+轻度污染    0
+良      37
+
+
+Beijing
+
+Level Frequency
+良       9
+中度污染    4
+轻度污染   25
+
+
+Shanghai
+
+Level Frequency
+良      36
+轻度污染    3
+
+
+Guangzhou
+
+Level Frequency
+良      37
+优       1
+轻度污染    0
+
+
+Beijing
+
+Level Frequency
+轻度污染   25
+良       9
+中度污染    4
+
+
+Shanghai
+
+Level Frequency
+轻度污染    3
+良      36
+
+
+Guangzhou
+
+Level Frequency
+优       1
+轻度污染    0
+良      37
+
+
