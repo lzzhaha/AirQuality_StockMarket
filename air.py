@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 import json
 from datetime import date
 import csv
-#import panda as pa
+import panda as pa
 import numpy as np
 import matplotlib.mlab as mlab
 import matplotlib.pyplot as plt
@@ -140,7 +140,7 @@ gz_csv.close()
 
 
 #Perform some statistics analysis using panda, numpy, matplotlib library
-"""
+
 bj_df = pa.DataFrame(data = bj_history, columns = fields)
 
 sh_df = pa.DataFrame(data = sh_history, columns = fields)
@@ -150,7 +150,7 @@ gz_df = pa.DataFrame(data = gz_hisotry, columns = fileds)
 bj_df.describe()
 sh_df.describe()
 gz_df.describe()
-"""
+
 bj_air_histories = []
 for history in bj_history:
     bj_air_histories.append(history.Quality_level)
